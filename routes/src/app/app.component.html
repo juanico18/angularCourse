@@ -1,0 +1,18 @@
+<h1>Wellcome to routes ABC app</h1>
+<nav>
+  <ul>
+    <li><a [routerLink]="[{ outlets: { popup: ['a'] } }]" routerLinkActive="claseActive">A</a> </li>
+    <li><a [routerLink]="[{ outlets: { popup: ['b'] } }]" routerLinkActive="claseActive">B</a> </li>
+    <li><a routerLink="/c" routerLinkActive="claseActive">C</a> </li>
+  </ul>
+</nav>
+<nav>
+  <ul>
+    <li><button (click)="goA()">A</button> </li>
+    <li><button (click)="goB()">B</button> </li>
+    <li><button (click)="goC()">C</button> </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+<p>PRueba</p>
+<router-outlet name="popup"></router-outlet>

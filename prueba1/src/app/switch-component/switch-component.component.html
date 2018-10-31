@@ -1,0 +1,8 @@
+<div>
+    Enter a superhero name: <input [(ngModel)]=name><br>
+  </div>
+  <h2>{{name}}</h2>
+  <blockquote [ngSwitch]="name">
+      <p *ngSwitchCase="'Wolverine'">Wolverine</p>
+      <p *ngSwitchCase="'Linterman'">Linterman</p>
+  </blockquote>

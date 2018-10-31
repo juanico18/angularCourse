@@ -1,0 +1,7 @@
+<ul *ngFor="let hero of lisObjects">
+  <li>{{hero.name}}</li>
+  <li>Opponent: {{hero.rival}}</li>
+  <ul *ngFor="let power of hero.superPowers">
+      <li>{{power}}</li>
+    </ul>
+</ul>

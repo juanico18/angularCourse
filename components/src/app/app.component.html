@@ -1,0 +1,5 @@
+<app-saluda-a name="Nelson Mandela" ></app-saluda-a>
+<br/>
+<app-saluda-a [name]="peter.toUpperCase()" (readed)="doSomething($event)"></app-saluda-a>
+
+<app-super-hero *ngFor="let hero of heroes" [superHero]=hero (emitSuperHero)=callSuperHero($event)></app-super-hero>
